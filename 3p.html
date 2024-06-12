@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIGNACIÓN DE PRECIOS</title>
+    <link rel="stylesheet" href="estilopagina.css">
+  <link rel="stylesheet" href="botonesestilo.css">
+ 
+
+</head>
+<body>
+    <div class="contenedor">
+        <h1>ASIGNACIÓN DE PRECIOS</h1>
+
+        <section class="introduccion">
+          
+            <p>
+                La asignación de precios es un aspecto crucial de la estrategia empresarial, ya que determina el valor al que se ofrecen los productos o servicios a los clientes. Juega un papel significativo al influir en la demanda, los ingresos y la rentabilidad.
+            </p>
+            <p>
+                Una asignación de precios eficaz implica considerar diversos factores, incluidos los costos de producción, el mercado objetivo, el panorama competitivo y los objetivos generales del negocio. Es un proceso dinámico que requiere una evaluación y ajuste continuos.
+            </p>
+        </section>
+
+        <img src="ap.png" alt="Image 1">
+
+        <section class="metodos-de-precios">
+            <h2>Métodos de Precios</h2>
+            <p> Existen diferentes maneras de asignarle el precio a los productos:</p>
+            <ul>
+                <li>
+                    <h4>Precios basados en costos</h4>
+                    <p>
+                        Este método establece el precio en función del costo total de producción, incluidos los costos directos e indirectos, agregando un margen de beneficio deseado.
+                    </p>
+                </li>
+                <li>
+                    <h4>Precios basados en la demanda</h4>
+                    <p>
+                        Este método considera la elasticidad de la demanda, fijando precios basados en cuánto están dispuestos a pagar los clientes por el producto o servicio.
+                    </p>
+                </li>
+                <li>
+                    <h4>Precios basados en la competencia</h4>
+                    <p>
+                        Este método analiza las estrategias de precios de la competencia y establece precios en consecuencia, manteniendo la competitividad y garantizando la rentabilidad.
+                    </p>
+                </li>
+                <li>
+                    <h4>Precios basados en el valor</h4>
+                    <p>
+                        Este método se centra en el valor percibido que los clientes obtienen del producto o servicio, estableciendo precios que se alinean con la propuesta de valor.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="calculadora">
+            <h2>Calculadora</h2>
+            <p>
+                ¿Te gustaría conocer como asignar el precio a tus productos? Es fácil, debes tener en cuenta el porcentaje de ganacia que deseas ver, y el costo unitario de tus productos. Es importante tener en consideración quien es tu mercado objetivo; es decir, a quien le vas a vender tus productos, ya que en base a ello usted puede ajustarse a sus necesidades; no es lo mismo venderle a un adulto que a un niño, ¿o si?. Además, debes tener en consideración los precios de productos como el tuyo dentro del mercado, para que de esta manera no le asigne un precio muy elevado o muy bajo a sus productos.
+            </p>
+
+            <label for="porcentajeGananciaEsperado">Porcentaje de Ganancia Esperado (%):</label>
+            <input type="number" id="porcentajeGananciaEsperado" min="0" max="99" required>
+        
+            <label for="costoUnitario">Costo Unitario:</label>
+            <input type="number" id="costoUnitario" step="0.01" min="0" required>
+        
+            <button onclick="calcularPrecioVenta()">Calcular Precio de Venta</button>
+        
+            <p id="resultadoPrecioVenta"></p>
+        
+            <script src="script.js"></script>
+
+        </section>
+    </div>
+
+    <script src="calculadoraprecio.js"></script>
+
+    <script src="botones.js"></script>
+    <nav class="navegacion-superior">
+      <ul>
+        <li><a href= "1p.html">INICIO</a></li>
+        <li><a href="2p.html">Planificación de gastos</a></li>
+        <li><a href="4p.html">Punto de equilibrio</a></li>
+       
+      </ul>
+    </nav>
+
+</body>
+</html>

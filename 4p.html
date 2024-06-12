@@ -1,0 +1,110 @@
+<section id="pantalla4" class="pantalla">
+ 
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punto de equilibrio</title>
+  <link rel="stylesheet" href="estilopagina.css"> 
+  <link rel="stylesheet" href="estilocarrusel.css"> 
+
+  <link rel="stylesheet" href="botonesestilo.css">
+</head>
+
+<body>
+<h1> PUNTO DE EQUILIBRIO</h1>
+<P>                                             
+                                    
+</P>
+
+ <h2> ¿Qué es el punto de equilibrio?</h2> 
+<P> El punto de equilibrio es un concepto ampliamente utilizado en el ámbito de la contabilidad y la gestión financiera. Se utiliza para determinar el nivel de ventas o producción necesario para cubrir los costos totales de una empresa y alcanzar el punto en el que los ingresos igualan a los costos.; es decir que el negocio está vendiendo la cantidad de productos o servicios necesarios para cubrir de forma precisa sus gastos.</P>
+
+<div class="carousel-container">
+  
+  <div class="carousel">
+      <img src="pe1.png" alt="Image 1">
+      <img src="pe2.jpg" alt="Image 2">
+      <img src="pe3.jpeg" alt="Image 3">
+  </div>
+  <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+  </div>
+</div>
+<script src="carrusel.js"></script>
+
+  <h2>Calculadora de punto de equilibrio</h2>
+  <p> Es momento de conocer cual es el punto de equilibrio de tu negocio; para eso, ten a la mano los siguientes datos:</p>
+  <ul>
+    <li>
+  <h4>Gastos fijos </h4>
+      <p> Es el gasto que se mantiene invariable independientemente del volumen de producción de la empresa. Por ejemplo, el alquiler de un local, el salario de los empleados, o el pago de impuestos.</p>
+      <p> Procura tener en cuenta tus gastos fijos de manera mensual; es decir, si tus gastos fijos son renta y luz, contempla cuanto pagas por estos servicios de manera mensual.</p>
+      <img src="https://www.ceupe.com/images/easyblog_articles/3903/costos-fijos.png" alt="Costos fijos">
+      <p> Imagen obtenida de Diseño Eureka
+        Todos los Derechos Reservados </p>
+    </li>
+
+       <li>
+      <h4> Gastos indirectos </h4>
+      <p> Los gastos indirectos son todos los demás gastos que no entran dentro de los fijos, por ejemplo, el mantenimiento, el mobiliario y los equipos informáticos, maquinaria, etc; pero estos suelen no estar presentes en las MiPyMes.</p>
+      <img src="https://direccionempresarial.com.mx/wp-content/uploads/2021/11/Diferencias-entre-el-costo-del-producto-y-el-costo-del-per%C3%ADodo-950x610.jpg" alt="Costo">
+      <p> Imagen obtenida de Diseño Eureka
+        Todos los Derechos Reservados </p>
+    </li>
+
+    <li>
+      <h4> Costo unitario </h4>
+    <p> El costo unitario es el valor promedio que, a cierto volumen de producción, cuesta producir una unidad del producto. Es decir, toda la materia necesaria para producir cada porducto. Por ejemplo, en el caso de las gelatinas, el costo unitario es la suma de todos sus ingredientes: grenetina, fruta, agua, envase, etc.</p>
+    </li>
+
+    <li>
+      <h4> Precio del producto </h4>
+      <p> El precio del producto es la cantidad  que un consumidor debe pagar con el fin de obtener el artículo de su interés o para contratar los servicios de una empresa.</p>
+      <img src="https://modestomiguez.com/wp-content/uploads/2021/01/Costo-precio-y-valor.jpg" alt="Precio">
+      <p> Imagen obtenida de Modesto Miguez </p>
+      <p> Para calcular el precio de su producto puede ir a la página <a href="3p.html">Asignación de precios</a> </p>  
+    
+ 
+  </ul>
+    
+  <p> Una vez conociendo todo esto, ingrese sus datos en la siguiente calculadora </p>
+  <div class="contenedor-formulario">
+    <label for="gastosFijos">Gastos fijos:</label>
+    <input type="number" id="gastosFijos" value="0">
+
+    <label for="gastosIndirectos">Gastos indirectos:</label>
+    <input type="number" id="gastosIndirectos" value="0">
+
+    <label for="costounitario">Costo unitario:</label>
+    <input type="number" id="costounitario" value="0">
+
+
+    <label for="precioProducto">Precio del producto:</label>
+    <input type="number" id="precioProducto" value="0">
+
+    <button onclick="calcularPuntoEquilibrio()">Calcular</button>
+  </div>
+
+  <div id="resultados"></div>
+
+  <script src="puntodeequilibrio.js"></script>
+
+  <script src="botones.js"></script>
+  <nav class="navegacion-superior">
+    <ul>
+      <li><a href= "1p.html">INICIO</a></li>
+      <li><a href="2p.html">Planificación de gastos</a></li>
+      <li><a href="3p.html">Asignación de precios</a></li>
+     
+    </ul>
+  </nav>
+
+
+</body>
+
+
+</html>
